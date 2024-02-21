@@ -1,0 +1,51 @@
+.ContactForm{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+    align-items: center;
+}
+
+.formmail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:linear-gradient(#2B2B2B,#131313);
+    box-shadow: 1px 1px 3px 2px #ddd;
+    margin: 10px;
+    max-width: 60%;
+    color: #3C5EC1;
+    min-width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    
+}
+
+.contactUs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px auto;
+    padding: 5px;
+    border: 1px solid #3C5EC1;
+    border-radius: 6px;
+    background-color: #f1f1f1;
+    font-weight: 800;
+}
+
+form span{
+    color: #3C5EC1;
+}
+
+.sendemail{
+    height: 30px;
+    width: 80px;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    background-color: #3C5EC1;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+    color: #ddd;
+}
