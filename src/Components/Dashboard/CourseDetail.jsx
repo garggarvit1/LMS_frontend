@@ -27,7 +27,7 @@ const CourseDetail = () => {
     const fetch = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3001/api/getCourse/${id}`
+          `https://lms-backend-t9s0.onrender.com/api/getCourse/${id}`
         );
         setData(response.data.course);
       } catch (err) {
@@ -45,7 +45,7 @@ const CourseDetail = () => {
   const submit = async (e) => {
     e.preventDefault();
     await axios
-      .put(`http://localhost:3001/api/updateCourse/${id}`, Data)
+      .put(`https://lms-backend-t9s0.onrender.com/api/updateCourse/${id}`, Data)
       .then((res) => {
         console.log(res);
         alert(res.data.message);

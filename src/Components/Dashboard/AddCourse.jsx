@@ -27,7 +27,7 @@ const AddCourse = () => {
 
   const submit=async (e)=>{
     e.preventDefault();
-    await axios.post("http://localhost:3001/createcourse",Data).then((res)=>{
+    await axios.post("https://lms-backend-t9s0.onrender.com/createcourse",Data).then((res)=>{
       console.log(res);
       // alert(res.data.message);
       toast({

@@ -26,7 +26,7 @@ const ChapterNav = ({ onChapterClick }) => {
     const fetch = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3001/api/getCourse/${id}`
+          `https://lms-backend-t9s0.onrender.com/api/getCourse/${id}`
         );
         setData(response.data.course);
       } catch (err) {

@@ -8,7 +8,7 @@ const CourseTable = () => {
   const [data, setData] = useState();
   useEffect(() => {
     const fetch = async () => {
-      await axios.get("http://localhost:3001/courses").then((res) => {
+      await axios.get("https://lms-backend-t9s0.onrender.com/courses").then((res) => {
         setData(res.data.courses);
       });
     };
@@ -17,7 +17,7 @@ const CourseTable = () => {
 
   async function handleDelete(id){
     try{
-        await axios.delete(`http://localhost:3001/api/deleteCourse/${id}`)
+        await axios.delete(`https://lms-backend-t9s0.onrender.com/api/deleteCourse/${id}`)
         .then((res)=>{
             console.log(res);
             alert(res.data.message)})

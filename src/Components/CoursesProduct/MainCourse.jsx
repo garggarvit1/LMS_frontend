@@ -24,7 +24,7 @@ const MainCourse = () => {
 
     useEffect(()=>{
         const fetch=async()=>{
-            await axios.get('http://localhost:3001/courses')
+            await axios.get('https://lms-backend-t9s0.onrender.com/courses')
             .then((res)=>{
                 setData(res.data.courses);
                 setFilteredData(res.data.courses);

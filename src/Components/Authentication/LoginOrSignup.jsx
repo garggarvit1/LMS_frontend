@@ -25,7 +25,7 @@ const LoginOrSignup = () => {
     const handleSignUp = ()=>{
 
         if(action=="Sign Up"){
-            axios.post("http://localhost:3001/create",data)
+            axios.post("https://lms-backend-t9s0.onrender.com/create",data)
             .then((res)=>{
                 toast({
                     title: 'Account created.',
@@ -60,7 +60,7 @@ const LoginOrSignup = () => {
     const handleLogin = ()=>{
         
         if(action=="Login"){
-            axios.post("http://localhost:3001/login",data)
+            axios.post("https://lms-backend-t9s0.onrender.com/login",data)
             
             .then((res)=>{
                 console.log(res);
